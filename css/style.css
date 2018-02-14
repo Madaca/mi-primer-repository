@@ -1,0 +1,65 @@
+* {
+ box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+}
+
+html {
+ font-size: 16px;
+ font-family: Arial, sans-serif;
+}
+
+img {
+ max-width: 100%;
+}
+
+/* Headers */
+h1 {
+ font-size: 3em;
+}
+
+h2 {
+ font-size: 2.5em;
+}
+
+h3 {
+ font-size: 2.25em;
+}
+h4 {
+ font-size: 2em;
+}
+h5 {
+ font-size: 1.5em;
+}
+
+/* Exercise Styles */
+.block {
+  border: 1em solid black;
+ float: left;
+ min-height: 30em;
+}
+
+/* Mobile first code */
+.block--double, .block--triple {
+  width: 100%;
+}
+
+.block--triple {
+ background: limegreen;
+ /* width: 33.33%; */
+}
+
+.block--double {
+ background: pink;
+ /* width: 50% */
+}
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+  .block--double {
+    width: 50%
+  }
+  .block--triple {
+    width: 33.33%;
+  }
+}
